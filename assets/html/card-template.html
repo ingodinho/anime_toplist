@@ -1,0 +1,22 @@
+<div class="toplist__card">
+    <img src=${obj.image} alt="title-img" class="toplist__card__img">
+    <h3 class="toplist__card__title">${obj.name}</h3>
+    <div class="toplist__card__details">
+        <div class="toplist__card__rank toplist__flex">
+            <span>Rank:</span>
+            <span>${obj.rank}</span>
+        </div>
+        <div class="toplist__card__score toplist__flex">
+            <span>Score</span>
+            <span>${obj.score}</span>
+        </div>
+        <div class="toplist__card__genre toplist__flex">
+            <span>Genres</span>
+            <span>${obj.genre.forEach(el => el)}}</span>
+        </div>
+        <div class="toplist__card__episodes toplist__flex">
+            <span>Episodes</span>
+            <span>${obj.episodes}</span>
+        </div>
+    </div>
+</div>
